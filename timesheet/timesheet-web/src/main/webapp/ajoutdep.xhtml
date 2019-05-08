@@ -1,0 +1,41 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="/template/template.xhtml"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+	<ui:param name="page_name" value="Depence" />
+	<ui:define name="content">
+		<h:panelGroup>
+			<h:form>
+<!-- 				<h:outputText value="Bonjour #{loginBean.employe.prenom} #{loginBean.employe.nom}" /> | -->
+<!-- 				<h:commandLink value="Déconnexion" action="#{loginBean.doLogout()}" /> -->
+			</h:form>
+		</h:panelGroup>
+
+		<h:form>
+		
+		<head>
+</head>
+<h:form>
+				<h:outputText value="objectif" />
+				<h:inputText value="#{dep.objectif}" />
+				<br />
+				<h:outputText value="Valeur" />
+				<h:inputText value="#{dep.valeur}" />
+				<br />
+				<h:outputText value="description" />
+				<h:inputText value="#{dep.description}" />
+				<br />
+				<h:outputText value="event id" />
+				<h:inputText value="#{dep.eventID}" />
+				<br />
+				<h:commandButton value="ajout" action="#{dep.add()}" />
+</h:form>
+			
+</h:form>
+		
+	</ui:define>
+	
+
+</ui:composition>
