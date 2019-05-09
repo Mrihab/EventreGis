@@ -21,6 +21,7 @@ import org.primefaces.json.JSONObject;
 
 import Depence.Depence;
 import Depence.DepenceRemote;
+import Sms.sendSms;
 
 @ManagedBean
 @SessionScoped
@@ -183,9 +184,22 @@ public class Dep implements Serializable {
 //         
 //
 //     }
+	
+	
 
 	
-	
+	public void send(Dep d){
+		
+		if ( d.Valeur>300);
+		
+		
+		 
+		
+		
+		
+		
+		
+	}
 	
 	
 	
