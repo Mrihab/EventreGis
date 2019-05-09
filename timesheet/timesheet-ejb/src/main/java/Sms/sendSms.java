@@ -5,11 +5,20 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+
+import Depence.Depence;
+
 public class sendSms {
 
 
 public String sendSms(String msg,long num) {
+	
+	
+
+	
 	try {
+		
+		
 		// Construct data
 		String apiKey = "apikey=" + "eqyLTFXTBaw-ZPs6SYkLk19xwVibWZT3YIu1qlgUtX";
 		String message = "&message=" + msg;
@@ -40,5 +49,6 @@ public String sendSms(String msg,long num) {
 		
 	}
 	
-
+	
+	
 }}
